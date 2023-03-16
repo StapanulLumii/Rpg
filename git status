@@ -1,0 +1,36 @@
+[33mcommit 50126ac1794cdded1f873948beb9673858bcb678[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: StapanulLumii <82084902+StapanulLumii@users.noreply.github.com>
+Date:   Thu Mar 9 16:37:06 2023 +0100
+
+    First commit, empty project and .gitignore
+
+.gitignore
+.vsconfig
+Assets/Scenes.meta
+Assets/Scenes/SampleScene.unity
+Assets/Scenes/SampleScene.unity.meta
+Packages/manifest.json
+Packages/packages-lock.json
+ProjectSettings/AudioManager.asset
+ProjectSettings/ClusterInputManager.asset
+ProjectSettings/DynamicsManager.asset
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/EditorSettings.asset
+ProjectSettings/GraphicsSettings.asset
+ProjectSettings/InputManager.asset
+ProjectSettings/MemorySettings.asset
+ProjectSettings/NavMeshAreas.asset
+ProjectSettings/PackageManagerSettings.asset
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+ProjectSettings/Physics2DSettings.asset
+ProjectSettings/PresetManager.asset
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ProjectVersion.txt
+ProjectSettings/QualitySettings.asset
+ProjectSettings/TagManager.asset
+ProjectSettings/TimeManager.asset
+ProjectSettings/UnityConnectSettings.asset
+ProjectSettings/VFXManager.asset
+ProjectSettings/VersionControlSettings.asset
+ProjectSettings/XRSettings.asset
+ProjectSettings/boot.config
