@@ -68,7 +68,7 @@ public class SecondHeroKnight : MonoBehaviour {
         }
 
         // -- Handle input and movement --
-        float inputX = Input.GetAxis("Horizontal");
+        float inputX = Input.GetAxis("SecondHorizontal");
 
         // Swap direction of sprite depending on walk direction
         if (inputX > 0)
@@ -107,7 +107,7 @@ public class SecondHeroKnight : MonoBehaviour {
             m_animator.SetTrigger("Hurt");
 
         //Attack
-        else if(Input.GetKeyDown("right shift") && m_timeSinceAttack > 0.25f && !m_rolling)
+        else if(Input.GetButtonDown("SecondAttack") && m_timeSinceAttack > 0.25f && !m_rolling)
         {
             m_currentAttack++;
 
@@ -127,7 +127,7 @@ public class SecondHeroKnight : MonoBehaviour {
         }
 
         // Block
-        else if (Input.GetKeyDown(KeyCode.Keypad0) && !m_rolling)
+        else if (Input.GetButtonDown("SecondBlock") && !m_rolling)
         {
             m_animator.SetTrigger("Block");
             m_animator.SetBool("IdleBlock", true);
@@ -137,7 +137,7 @@ public class SecondHeroKnight : MonoBehaviour {
             m_animator.SetBool("IdleBlock", false);
 
         // Roll
-        else if (Input.GetKeyDown("down") && !m_rolling && !m_isWallSliding)
+        else if (Input.GetButtonDown("SecondSlide") && !m_rolling && !m_isWallSliding)
         {
             m_rolling = true;
             m_animator.SetTrigger("Roll");
@@ -146,7 +146,7 @@ public class SecondHeroKnight : MonoBehaviour {
             
 
         //Jump
-        else if (Input.GetKeyDown("up") && m_grounded && !m_rolling)
+        else if (Input.GetButtonDown("SecondJump") && m_grounded && !m_rolling)
         {
             m_animator.SetTrigger("Jump");
             m_grounded = false;
