@@ -25,6 +25,8 @@ public class HeroKnight : MonoBehaviour {
     private float               m_delayToIdle = 0.0f;
     private float               m_rollDuration = 8.0f / 14.0f;
     private float               m_rollCurrentTime;
+    //Collision2D collision;
+    //Monsters monsters;
 
 
     // Use this for initialization
@@ -38,6 +40,7 @@ public class HeroKnight : MonoBehaviour {
         m_wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor_HeroKnight>();
         m_wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_HeroKnight>();
     }
+ 
 
     // Update is called once per frame
     void Update ()
@@ -95,6 +98,8 @@ public class HeroKnight : MonoBehaviour {
         m_isWallSliding = (m_wallSensorR1.State() && m_wallSensorR2.State()) || (m_wallSensorL1.State() && m_wallSensorL2.State());
         m_animator.SetBool("WallSlide", m_isWallSliding);
 
+        
+        
         //Death
         if (Input.GetKeyDown("e") && !m_rolling)
         {
@@ -121,6 +126,11 @@ public class HeroKnight : MonoBehaviour {
 
             // Call one of three attack animations "Attack1", "Attack2", "Attack3"
             m_animator.SetTrigger("Attack" + m_currentAttack);
+           
+            //if (collision.gameObject.TryGetComponent<Monsters>(out Monsters monstersController))
+            //{
+            //    monstersController.takeDamage(1);
+            //}
 
             // Reset timer
             m_timeSinceAttack = 0.0f;
