@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class SecondHeroKnight : MonoBehaviour {
@@ -25,6 +26,13 @@ public class SecondHeroKnight : MonoBehaviour {
     private float               m_delayToIdle = 0.0f;
     private float               m_rollDuration = 8.0f / 14.0f;
     private float               m_rollCurrentTime;
+
+    public GameObject attackPoint;
+    public float radius;
+    [SerializeField] LayerMask enemies;
+    public bool facingRight;
+    public float damage;
+
 
 
     // Use this for initialization
@@ -71,16 +79,11 @@ public class SecondHeroKnight : MonoBehaviour {
         float inputX = Input.GetAxis("SecondHorizontal");
 
         // Swap direction of sprite depending on walk direction
-        if (inputX > 0)
+
+        if ((inputX < 0 && facingRight) || (inputX > 0 && !facingRight))
         {
-            GetComponent<SpriteRenderer>().flipX = false;
-            m_facingDirection = 1;
-        }
-            
-        else if (inputX < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
-            m_facingDirection = -1;
+            facingRight = !facingRight;
+            transform.Rotate(new Vector3(0, 180, 0));
         }
 
         // Move
@@ -191,5 +194,21 @@ public class SecondHeroKnight : MonoBehaviour {
             // Turn arrow in correct direction
             dust.transform.localScale = new Vector3(m_facingDirection, 1, 1);
         }
+    }
+
+    public void attack()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+
+        foreach (Collider2D enemyGameobject in enemy)
+        {
+            Debug.Log("Hit enemy");
+            enemyGameobject.GetComponent<BanditHealth>().health -= damage;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
 }
