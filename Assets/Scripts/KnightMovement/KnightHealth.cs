@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class KnightHealth : MonoBehaviour
 {
     [SerializeField] int health = 3;
@@ -11,6 +12,9 @@ public class KnightHealth : MonoBehaviour
     public Sprite emptyHeart;
     public Sprite fullHeart;
     public Image[] hearts;
+    public GameManagerScipt gameManager;
+    private bool isDead;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +23,12 @@ public class KnightHealth : MonoBehaviour
     public void takeDamage(int amount)
     {
         health -= amount;
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
+            isDead = true;
+            gameManager.GameOver();
             Destroy(gameObject);
+
         }
 
     }
