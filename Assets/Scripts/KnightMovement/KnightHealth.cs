@@ -14,10 +14,12 @@ public class KnightHealth : MonoBehaviour
     public Image[] hearts;
     public GameManagerScipt gameManager;
     private bool isDead;
+    private Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         health = maxHealth;
     }
     public void takeDamage(int amount)
@@ -27,7 +29,8 @@ public class KnightHealth : MonoBehaviour
         {
             isDead = true;
             gameManager.GameOver();
-            Destroy(gameObject);
+            anim.SetTrigger("Death");
+           // Destroy(gameObject);
 
         }
 
@@ -53,6 +56,14 @@ public class KnightHealth : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
+        }
+        
+    }
+    private void LateUpdate()
+    {
+        if(health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
