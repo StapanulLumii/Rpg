@@ -5,15 +5,26 @@ using UnityEngine;
 public class BanditHealth : MonoBehaviour
 {
     public float health;
-
     public float currentHealth;
+
+    [SerializeField] private GameObject blink;
 
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
         currentHealth = health;
+        blink.SetActive(false);
+
+        //anim = GetComponent<Animator>();
+    }
+   private void EnableBlink()
+    {
+        blink.SetActive(true);
+    }
+    private void DisableBlink()
+    {
+        blink?.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,14 +32,19 @@ public class BanditHealth : MonoBehaviour
     {
         if (health < currentHealth)
         {
+            Invoke("EnableBlink", 0f);
+            Invoke("DisableBlink", 0.1f);
             currentHealth = health;
-            anim.SetTrigger("Hurt");
+            //anim.SetTrigger("Hurt");
+           
         }
         
         if (health <= 0)
         {
             Debug.Log("enemy dead");
-            anim.SetTrigger("Death");
+            Destroy(gameObject);
+            //anim.SetTrigger("Death");
+           
         }
     }
 }
