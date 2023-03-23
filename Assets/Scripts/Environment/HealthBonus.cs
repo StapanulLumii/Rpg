@@ -15,7 +15,7 @@ public class HealthBonus : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(knightHealth.health < knightHealth.maxHealth)
+        if((knightHealth.health < knightHealth.maxHealth) && col.gameObject.tag == ("Player"))
         {
             Destroy(gameObject);
             knightHealth.health = knightHealth.health + healthBonus;
