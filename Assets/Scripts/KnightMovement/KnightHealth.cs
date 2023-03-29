@@ -15,28 +15,32 @@ public class KnightHealth : MonoBehaviour
     public GameManagerScipt gameManager;
     private bool isDead;
     private Animator anim;
-    private bool isNotBlocking;
     
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         health = maxHealth;
-        isNotBlocking = true;
     }
     public void takeDamage(int amount)
     {
-        health -= amount;
-        if (health <= 0 && !isDead && isNotBlocking)
+
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Block"))
+        {
+            health -= amount;
+            Debug.Log("aloha");
+        }
+
+        if (health <= 0 && !isDead)
         {
             isDead = true;
             gameManager.GameOver();
             anim.SetTrigger("Death");
-           // Destroy(gameObject);
-
+            // Destroy(gameObject);
         }
-
     }
+    
     // Update is called once per frame
     void Update()
     {
