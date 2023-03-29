@@ -135,7 +135,7 @@ public class HeroKnight : MonoBehaviour {
         }
 
         // Block
-        else if (Input.GetButtonDown("Block") && !m_rolling)
+        else if(Input.GetButton("Block") && !m_rolling && m_body2d.velocity.x == 0)
         {
 
             m_animator.SetTrigger("Block");
@@ -144,6 +144,7 @@ public class HeroKnight : MonoBehaviour {
 
         else if (Input.GetMouseButtonUp(1))
             m_animator.SetBool("IdleBlock", false);
+        
 
         // Roll
         else if (Input.GetButtonDown("Slide") && !m_rolling && !m_isWallSliding)
