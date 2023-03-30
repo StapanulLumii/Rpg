@@ -19,7 +19,6 @@ public class HealthBonus : MonoBehaviour
         {
             Destroy(gameObject);
             knightHealth.health = knightHealth.health + healthBonus;
-
         }
     }
     // Start is called before the first frame update
