@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class KnightHealth : MonoBehaviour
     public GameManagerScipt gameManager;
     private bool isDead;
     private Animator anim;
+    public float tresholdY = -10f;
     
     // Start is called before the first frame update
     void Start()
@@ -25,9 +27,12 @@ public class KnightHealth : MonoBehaviour
     public void takeDamage(int amount)
     {
 
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Block"))
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
         {
             health -= amount;
+            Debug.Log("aloha");
         }
 
         if (health <= 0 && !isDead)
@@ -35,14 +40,23 @@ public class KnightHealth : MonoBehaviour
             isDead = true;
             gameManager.GameOver();
             anim.SetTrigger("Death");
-            // Destroy(gameObject);
+        }
+    }
+
+    private void FallDown()
+    {
+        if (transform.position.y <= tresholdY)
+        {
+            anim.SetTrigger("Death");
+            Destroy(gameObject);
+            gameManager.GameOver();
         }
     }
     
-    // Update is called once per frame
     void Update()
     {
-
+        FallDown();
+        
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < health)
