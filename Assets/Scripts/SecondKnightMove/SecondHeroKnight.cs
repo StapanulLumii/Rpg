@@ -203,7 +203,7 @@ public class SecondHeroKnight : MonoBehaviour {
         foreach (Collider2D enemyGameobject in enemy)
         {
             Debug.Log("Hit enemy");
-            enemyGameobject.GetComponent<BanditHealth>().health -= damage;
+            enemyGameobject.GetComponent<EnemyHealth>().health -= damage;
         }
     }
 
