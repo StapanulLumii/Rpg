@@ -6,6 +6,7 @@ public class BanditHealth : MonoBehaviour
 {
     public float health;
     public float currentHealth;
+    public float tresholdY = -15f;
 
     [SerializeField] private GameObject blink;
 
@@ -45,6 +46,12 @@ public class BanditHealth : MonoBehaviour
             Destroy(gameObject);
             //anim.SetTrigger("Death");
            
+        }
+
+        if (transform.position.y <= tresholdY)
+        {
+            Destroy(gameObject);
+            Debug.Log("Monster destroyed");
         }
     }
 }

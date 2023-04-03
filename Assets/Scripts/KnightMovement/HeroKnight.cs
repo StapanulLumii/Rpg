@@ -183,9 +183,6 @@ public class HeroKnight : MonoBehaviour {
         }
 
     }
-
-    // Animation Events
-    // Called in slide animation.
     void AE_SlideDust()
     {
         Vector3 spawnPosition;
