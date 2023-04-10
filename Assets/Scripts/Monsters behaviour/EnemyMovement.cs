@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
     public GameObject pointB;
     public GameObject gameObject;
     public Rigidbody2D rb;
-    public int EnemySpeed = 2;
+    public float EnemySpeed = 2f;
     public Transform curentPoint;
     // Start is called before the first frame update
     void Start()
