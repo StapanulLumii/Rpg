@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class ShootingEnemy : MonoBehaviour
@@ -9,6 +10,8 @@ public class ShootingEnemy : MonoBehaviour
     [SerializeField]
     float fireRate;
     float nextFire;
+    public Transform bulletPos;
+    private float timer;
     void Start()
     {
         fireRate = 1f;
@@ -18,14 +21,16 @@ public class ShootingEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckIfTimeToFire();
+        timer += Time.deltaTime;
+        if(timer > nextFire) 
+        {
+            timer = 0f;
+            nextFire = Time.deltaTime + fireRate;
+            CheckIfTimeToFire();
+        }
     }
     void CheckIfTimeToFire()
     {
-        if(Time.deltaTime > nextFire)
-        {
-            Instantiate(Bullet, transform.position, Quaternion.identity);
-            nextFire = Time.deltaTime + fireRate;
-        }
+            Instantiate(Bullet, bulletPos.position, Quaternion.identity);
     }
 }
