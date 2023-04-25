@@ -4,23 +4,47 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField] float health =3;
-    [SerializeField] int maxHealth = 5;
+    public float health;
+    public float currentHealth;
 
+    [SerializeField] private GameObject blink;
+
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
+        currentHealth = health;
+        blink.SetActive(false);
+
+        //anim = GetComponent<Animator>();
     }
-    public void Damage(int damageAount){
-        health -= damageAount;
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
+   private void EnableBlink()
+    {
+        blink.SetActive(true);
     }
+    private void DisableBlink()
+    {
+        blink?.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (health < currentHealth)
+        {
+            Invoke("EnableBlink", 0f);
+            Invoke("DisableBlink", 0.1f);
+            currentHealth = health;
+            //anim.SetTrigger("Hurt");
+           
+        }
+        
+        if (health <= 0)
+        {
+            Debug.Log("enemy dead");
+            Destroy(gameObject);
+            //anim.SetTrigger("Death");
+           
+        }
     }
 }

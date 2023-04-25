@@ -26,11 +26,13 @@ public class KnightHealth : MonoBehaviour
     }
     public void takeDamage(int amount)
     {
-        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("Block"))
+
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
+        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
         {
             health -= amount;
             Debug.Log("aloha");
-            anim.SetTrigger("Hurt");
         }
 
         if (health <= 0 && !isDead)
