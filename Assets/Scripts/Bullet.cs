@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    float moveSpeed = 7f;
+    public float moveSpeed = 1f;
 
-    Rigidbody2D rb;
-    HeroKnight target;
+    private Rigidbody2D rb;
+    private HeroKnight target;
     Vector2 moveDirection;
     // Start is called before the first frame update
     void Start()
@@ -15,17 +15,19 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindObjectOfType<HeroKnight>();
         moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
-        rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        Destroy(gameObject, 3f);
+        //rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
+        rb.velocity = moveDirection * moveSpeed;
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.name.Equals("HeroKnight"))
-        {
+        //if(collider.gameObject.CompareTag("Player"))
+        
             Debug.Log("Hit!");
             Destroy(gameObject);
-        }
+       
+
     }
     // Update is called once per frame
     void Update()
