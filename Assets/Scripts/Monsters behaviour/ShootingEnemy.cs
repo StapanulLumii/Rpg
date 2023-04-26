@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 
 public class ShootingEnemy : MonoBehaviour
@@ -31,6 +28,6 @@ public class ShootingEnemy : MonoBehaviour
     }
     void CheckIfTimeToFire()
     {
-            Instantiate(Bullet, bulletPos.position, Quaternion.identity);
+        Instantiate(Bullet, bulletPos.position, Quaternion.identity);
     }
 }

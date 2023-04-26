@@ -2,60 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dec56bec-28a0-4ba0-a3fd-1f7637c137a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlockFlash.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BlockFlash.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/BlockFlash_AnimController.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/BlockFlash_AnimController.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_AnimController.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_AnimController.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Attack1.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Attack1.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Attack2.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Attack2.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Attack3.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Attack3.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Block.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Block.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_BlockIdle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_BlockIdle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_BlockNoEffect.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_BlockNoEffect.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Death.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Death.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_DeathNoBlood.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_DeathNoBlood.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Fall.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Fall.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Hurt.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Hurt.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_IdleBlock.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_IdleBlock.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Jump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Jump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_LedgeGrab.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_LedgeGrab.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Roll.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Roll.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Run.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_Run.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_WallSlide.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_WallSlide.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/SlideDust.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/SlideDust.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/SlideDust.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/SlideDust.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ColorSwap.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ColorSwap.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ColorSwap/ColorSwap.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ColorSwap/ColorSwap.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ColorSwap/ColorSwap_HeroKnight.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ColorSwap/ColorSwap_HeroKnight.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ColorSwap/Sprites-ColorSwap.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ColorSwap/Sprites-ColorSwap.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ColorSwap/swap_texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ColorSwap/swap_texture.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/EnvironmentPalette_HeroKnight.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/EnvironmentPalette_HeroKnight.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_0.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_1.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_2.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_2.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_3.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/EnvironmentTiles_3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Environment/Walls_noFriction.physicsMaterial2D.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Environment/Walls_noFriction.physicsMaterial2D.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BlockFlash.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BlockFlash.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroKnight.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeroKnight.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroKnight_Green.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeroKnight_Green.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroKnight_Yellow.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeroKnight_Yellow.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SlideDust.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SlideDust.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/DestroyEvent_HeroKnight.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/DestroyEvent_HeroKnight.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/HeroKnight.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/HeroKnight.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/Sensor_HeroKnight.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/Sensor_HeroKnight.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondHeroKnight.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SecondHeroKnight.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Background.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/BlockFlash.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/BlockFlash.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/EnvironmentTiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/EnvironmentTiles.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/HeroKnight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/HeroKnight.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/HeroKnight_BlockNoEffect.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/HeroKnight_BlockNoEffect.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/HeroKnight_DeathNoBlood.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/HeroKnight_DeathNoBlood.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/SlideDust.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/SlideDust.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rpg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rpg/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/HeroKnight_AnimController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/HeroKnight_AnimController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Painted HQ 2D Forest Medieval Background/day/mountain02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Painted HQ 2D Forest Medieval Background/day/mountain02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Painted HQ 2D Forest Medieval Background/day/sky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Painted HQ 2D Forest Medieval Background/day/sky.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletDamage.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletDamage.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FirstRotationPoint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FirstRotationPoint.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SecondRotationPoint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SecondRotationPoint.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FirstScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/HeroKnight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/HeroKnight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/KnightHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KnightMovement/KnightHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monsters behaviour/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monsters behaviour/EnemyDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monsters behaviour/ShootingEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monsters behaviour/ShootingEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9269aab0267f4a259fc77443c34eaca51f800/cf/2a9ebc31/Collision2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SecondKnightMove/SecondHeroKnight.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -138,6 +103,7 @@
       <workItem from="1678961179351" duration="20000" />
       <workItem from="1678961622598" duration="187000" />
       <workItem from="1678962457306" duration="1741000" />
+      <workItem from="1682504156824" duration="9815000" />
     </task>
     <servers />
   </component>
@@ -146,6 +112,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
