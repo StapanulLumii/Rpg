@@ -24,7 +24,6 @@ public class Bullet : MonoBehaviour
     {
         //if(collider.gameObject.CompareTag("Player"))
         
-            Debug.Log("Hit!");
             Destroy(gameObject);
        
 

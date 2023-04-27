@@ -32,7 +32,6 @@ public class KnightHealth : MonoBehaviour
         //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
         {
             health -= amount;
-            Debug.Log("aloha");
         }
 
         if (health <= 0 && !isDead)

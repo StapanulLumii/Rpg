@@ -45,7 +45,6 @@ public class LadderBehavior : MonoBehaviour
     {
         if(isClimbing)
         {
-            Debug.Log("IsClimbing");
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical*speed);
         }    

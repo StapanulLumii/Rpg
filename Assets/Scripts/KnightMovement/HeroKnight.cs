@@ -99,18 +99,18 @@ public class HeroKnight : MonoBehaviour {
         
         
         //Death
-        if (Input.GetKeyDown("e") && !m_rolling)
+        /*if (Input.GetKeyDown("e") && !m_rolling)
         {
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
-        }
+        }*/
             
         //Hurt
-        else if (Input.GetKeyDown("q") && !m_rolling)
-            m_animator.SetTrigger("Hurt");
+        //else if (Input.GetKeyDown("q") && !m_rolling)
+           // m_animator.SetTrigger("Hurt");
 
         //Attack
-        else if(Input.GetButtonDown("Attack") && m_timeSinceAttack > 0.25f && !m_rolling)
+        if(Input.GetButtonDown("Attack") && m_timeSinceAttack > 0.25f && !m_rolling)
         {
             m_currentAttack++;
 
@@ -207,7 +207,7 @@ public class HeroKnight : MonoBehaviour {
 
         foreach (Collider2D enemyGameobject in enemy)
         {
-            Debug.Log("Hit enemy");
+            
             enemyGameobject.GetComponent<EnemyHealth>().health -= damage;
         }
     }
