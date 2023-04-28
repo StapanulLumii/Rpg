@@ -15,6 +15,8 @@ public class EnemyDamage : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        knightHealth = collision.gameObject.GetComponent<KnightHealth>();
+    
         if(collision.gameObject.tag == "Player")
         {
             knightHealth.takeDamage(damage);
