@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -9,7 +7,8 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     private HeroKnight target;
     Vector2 moveDirection;
-    // Start is called before the first frame update
+
+    private KnightHealth knightHealth;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -17,18 +16,10 @@ public class Bullet : MonoBehaviour
         moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
         //rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
         rb.velocity = moveDirection * moveSpeed;
+        
         Destroy(gameObject, 2f);
     }
-
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        //if(collider.gameObject.CompareTag("Player"))
-        
-            Destroy(gameObject);
-       
-
-    }
-    // Update is called once per frame
+    
     void Update()
     {
         
