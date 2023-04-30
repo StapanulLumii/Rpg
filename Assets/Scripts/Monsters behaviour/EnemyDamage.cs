@@ -19,7 +19,7 @@ public class EnemyDamage : MonoBehaviour
     
         if(collision.gameObject.tag == "Player")
         {
-            knightHealth.takeDamage(damage);
+            knightHealth.TakeDamage(damage);
         }
     }
 

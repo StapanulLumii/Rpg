@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,18 +15,14 @@ public class KnightHealth : MonoBehaviour
     private Animator anim;
     public float tresholdY = -10f;
     
-    // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         health = maxHealth;
     }
-    public void takeDamage(int amount)
+    public void TakeDamage(int amount)
     {
-
-        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
-        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
-        //!anim.GetCurrentAnimatorStateInfo(0).IsName("IdleBlock");
+        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Block"))
         {
             health -= amount;
         }
@@ -74,8 +67,6 @@ public class KnightHealth : MonoBehaviour
             {
                 hearts[i].enabled = false;
             }
-
         }
     }
-   
 }
