@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="dec56bec-28a0-4ba0-a3fd-1f7637c137a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/Example.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/Example.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Brutal 2D Adventure Mega Pack/Brutal 2D Adventure Jungle Pack/Example/ExampleSettings.lighting.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monsters behaviour/EnemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monsters behaviour/EnemyDamage.cs" afterDir="false" />
     </list>
+=======
+    <list default="true" id="dec56bec-28a0-4ba0-a3fd-1f7637c137a1" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +92,12 @@
       <workItem from="1678961179351" duration="20000" />
       <workItem from="1678961622598" duration="187000" />
       <workItem from="1678962457306" duration="1741000" />
+<<<<<<< Updated upstream
       <workItem from="1682708076977" duration="315000" />
+=======
+      <workItem from="1682504156824" duration="9815000" />
+      <workItem from="1682871909503" duration="31000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
