@@ -129,7 +129,6 @@ public class HeroKnight : MonoBehaviour {
         // Block
         else if(Input.GetButton("Block") && !m_rolling && m_body2d.velocity.x == 0)
         {
-            damage = 0;
             m_animator.SetTrigger("Block");
             m_animator.SetBool("IdleBlock", true);
         }
@@ -192,7 +191,7 @@ public class HeroKnight : MonoBehaviour {
         }
     }
     
-    public void Attack()
+    public void attack()
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
 

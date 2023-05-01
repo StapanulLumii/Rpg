@@ -14,7 +14,6 @@ public class ShootingEnemy : MonoBehaviour
     private float timer;
     void Start()
     {
-        fireRate = 1f;
         nextFire = Time.deltaTime;
     }
 
