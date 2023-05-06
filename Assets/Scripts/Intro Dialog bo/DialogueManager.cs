@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nametext;
     public TextMeshProUGUI dialogueText;
-
+    [SerializeField] private AudioSource QuestSound;
     public Animator animator;
 
     private Queue<string> sentences;
@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        QuestSound.Play();
         animator.SetBool("IsOpen", true);
 
         nametext.text = dialogue.name;

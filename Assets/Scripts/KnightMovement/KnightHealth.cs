@@ -14,7 +14,10 @@ public class KnightHealth : MonoBehaviour
     private bool isDead;
     private Animator anim;
     public float tresholdY = -10f;
-    
+    [SerializeField] private AudioSource takeDamage;
+
+    public Behaviour stopMoving;   
+
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
@@ -25,10 +28,12 @@ public class KnightHealth : MonoBehaviour
         if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Block"))
         {
             health -= amount;
+            takeDamage.Play();
         }
 
         if (health <= 0 && !isDead)
         {
+            stopMoving.enabled = false;
             isDead = true;
             gameManager.GameOver();
             anim.SetTrigger("Death");

@@ -8,6 +8,8 @@ public class HealthBonus : MonoBehaviour
     KnightHealth knightHealth;
     public int healthBonus = 1;
 
+    [SerializeField] private AudioSource bonusSound;
+
     void Awake()
     {
         knightHealth = FindObjectOfType<KnightHealth>();    
@@ -17,8 +19,9 @@ public class HealthBonus : MonoBehaviour
     {
         if((knightHealth.health < knightHealth.maxHealth) && col.gameObject.tag == ("Player"))
         {
-            Destroy(gameObject);
+            bonusSound.Play();
             knightHealth.health = knightHealth.health + healthBonus;
+            Destroy(gameObject);
         }
     }
     // Start is called before the first frame update

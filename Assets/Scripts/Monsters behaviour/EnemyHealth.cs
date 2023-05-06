@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] private GameObject blink;
 
+    [SerializeField] private AudioSource takeDamage;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class EnemyHealth : MonoBehaviour
     }
    private void EnableBlink()
     {
+        takeDamage.Play();
         blink.SetActive(true);
     }
     private void DisableBlink()
@@ -41,7 +43,7 @@ public class EnemyHealth : MonoBehaviour
         
         if (health <= 0)
         {
-            Debug.Log("enemy dead");
+            takeDamage.Play();
             Destroy(gameObject);
             //anim.SetTrigger("Death");
            

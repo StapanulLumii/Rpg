@@ -5,6 +5,7 @@ using UnityEngine;
 public class MakeDialogueAppear : MonoBehaviour
 {
     public GameObject dialogBox;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class MakeDialogueAppear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             dialogBox.SetActive(true);
             //Destroy(gameObject, 5f);
         }
