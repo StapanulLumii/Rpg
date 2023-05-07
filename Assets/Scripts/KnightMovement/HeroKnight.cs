@@ -203,6 +203,8 @@ public class HeroKnight : MonoBehaviour {
         foreach (Collider2D enemyGameobject in enemy)
         {
             enemyGameobject.GetComponent<EnemyHealth>().health -= damage;
+            
+            
         }
     }
     
