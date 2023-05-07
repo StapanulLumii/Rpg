@@ -1,4 +1,7 @@
-Authors: Alexandru Malai(304189), Tudor Andronachi(304300)
+<h1>
+  Authors: Alexandru Malai(304189), Tudor Andronachi(304300)
+</h1>
+
 
 Assets used:
 Hero knight sprites and animation - https://assetstore.unity.com/packages/2d/characters/hero-knight-pixel-art-165188
