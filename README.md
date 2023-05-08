@@ -6,7 +6,7 @@
   Assets used:
 </h3>
 
-<p>Hero knight sprites and animation - https://assetstore.unity.com/packages/2d/characters/hero-knight-pixel-art-165188</p>
+<p>Hero knight sprites and animation as well as code  - https://assetstore.unity.com/packages/2d/characters/hero-knight-pixel-art-165188</p>
 <p>Menu UI - https://assetstore.unity.com/packages/2d/gui/icons/royal-ui-volume-1-2-and-3-133347</p>
 <p>Background - https://assetstore.unity.com/packages/2d/environments/painted-hq-2d-forest-medieval-background-97738</p>
 <p>Environment - https://assetstore.unity.com/packages/2d/environments/pixel-art-platformer-village-props-166114</p>
