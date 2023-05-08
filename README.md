@@ -5,6 +5,9 @@
 <h2>
   Link to WebGL game: https://stapanullumii.github.io/Rpg/Build/index.html
 </h2>
+<h2>
+  Link to Youtube video: https://youtu.be/Gsmr4Z_7MRs
+</h2>
 
 <h3>
   Assets used:
