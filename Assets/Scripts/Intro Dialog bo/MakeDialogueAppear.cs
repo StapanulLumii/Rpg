@@ -9,10 +9,7 @@ public class MakeDialogueAppear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //if (dialogBox != null)
-        //  {
-        //  dialogBox.SetActive(true);
-        //  }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

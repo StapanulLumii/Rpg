@@ -16,7 +16,6 @@ public class MyTrigger : MonoBehaviour
         {
             
             healthBar.SetActive(true);
-            //Destroy(gameObject, 5f);
         }
     }
     // Update is called once per frame

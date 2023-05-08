@@ -29,8 +29,7 @@ public class BossHealth : MonoBehaviour
     {
         if (currentHealth < maxHealth)
         {
-            // Invoke("EnableBlink", 0f);
-            // Invoke("DisableBlink", 0.1f);
+            
             currentHealth = maxHealth;
             animator.SetTrigger("Hurt");
            
@@ -53,7 +52,6 @@ public class BossHealth : MonoBehaviour
         GetComponent<Rigidbody2D>().simulated = false;
         GetComponent<Collider2D>().enabled = false;
 
-        // Destroy the game object after a delay
-        //Destroy(gameObject, 2f);
+       
     }
 }

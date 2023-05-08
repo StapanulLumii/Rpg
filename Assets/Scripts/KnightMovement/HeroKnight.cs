@@ -96,16 +96,7 @@ public class HeroKnight : MonoBehaviour {
         //Set AirSpeed in animator
         m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
 
-        /*//Death
-        if (Input.GetKeyDown("e") && !m_rolling)
-        {
-            m_animator.SetBool("noBlood", m_noBlood);
-            m_animator.SetTrigger("Death");
-        }*/
-            
-        //Hurt
-        /*else if (Input.GetKeyDown("q") && !m_rolling)
-            m_animator.SetTrigger("Hurt");*/
+       
 
         //Attack
         if(Input.GetButtonDown("Attack") && m_timeSinceAttack > 0.25f && !m_rolling)
@@ -122,10 +113,6 @@ public class HeroKnight : MonoBehaviour {
             
             // Call one of three attack animations "Attack1", "Attack2", "Attack3"
             m_animator.SetTrigger("Attack" + m_currentAttack);
-            //if (collision.gameObject.TryGetComponent<Monsters>(out Monsters monstersController))
-            //{
-            //    monstersController.takeDamage(1);
-            //}
 
             // Reset timer
             m_timeSinceAttack = 0.0f;

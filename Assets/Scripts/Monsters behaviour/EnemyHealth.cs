@@ -14,7 +14,8 @@ public class EnemyHealth : MonoBehaviour
     private Animator animator;
     private Animator anim;
 
-    public HealBarScript healthBar; 
+    public HealBarScript healthBar;
+    public GameObject FinishScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +68,7 @@ public class EnemyHealth : MonoBehaviour
             }
             else
             {
+                FinishScreen.SetActive(true);
                 Die();
             }
            
@@ -84,7 +86,6 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         GetComponent<BossAI>().enabled = false;
 
-        // Destroy the game object after a delay
-        //Destroy(gameObject, 2f);
+     
     }
 }

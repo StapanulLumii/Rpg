@@ -14,7 +14,6 @@ public class Bullet : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindObjectOfType<HeroKnight>();
         moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
-        //rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
         rb.velocity = moveDirection * moveSpeed;
         
         Destroy(gameObject, 2f);
