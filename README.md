@@ -2,6 +2,10 @@
   Authors: Alexandru Malai(304189), Tudor Andronachi(304300)
 </h1>
 
+<h2>
+  Link to WevGL game: https://stapanullumii.github.io/Rpg/Build/index.html
+</h2>
+
 <h3>
   Assets used:
 </h3>
