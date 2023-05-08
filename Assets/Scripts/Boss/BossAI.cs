@@ -81,10 +81,6 @@ public class BossAI : MonoBehaviour
 
             // Detect enemies within the attack range
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, attackLayers);
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                enemy.GetComponent<BossHealth>().TakeDamage(damage);
-            }
             timeSinceLastAttack = 1f;
         }
         else
