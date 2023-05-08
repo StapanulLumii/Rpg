@@ -3,7 +3,7 @@
 </h1>
 
 <h2>
-  Link to WevGL game: https://stapanullumii.github.io/Rpg/Build/index.html
+  Link to WebGL game: https://stapanullumii.github.io/Rpg/Build/index.html
 </h2>
 
 <h3>
